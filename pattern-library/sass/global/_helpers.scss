@@ -75,8 +75,8 @@
 }
 
 %a11y-ensure-contrast {
-    background: palette(grayscale, black-t) !important; // a11y: Ensuring that color contrast is high for legibility
-    color: palette(grayscale, white-t) !important; // a11y: Ensuring that color contrast is high for legibility
+    background: palette(grayscale, black) !important; // a11y: Ensuring that color contrast is high for legibility
+    color: palette(grayscale, white) !important; // a11y: Ensuring that color contrast is high for legibility
 }
 
 // ----------------------------
@@ -139,7 +139,7 @@
     &:disabled,
     &.is-disabled {
         display: none;
-        color: palette(grayscale, light);
+        color: palette(grayscale, base);
     }
 
     // STATE: is pressed or active

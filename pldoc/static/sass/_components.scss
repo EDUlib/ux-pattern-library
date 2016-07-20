@@ -25,11 +25,11 @@
     @extend %clear-last-child;
     @include clearfix();
     padding-bottom: spacing-vertical(base);
-    border-bottom: rem(2) solid palette(grayscale-cool, x-light);
+    border-bottom: rem(2) solid palette(grayscale, x-light);
     margin-bottom: spacing-vertical(base);
 
     .button-overlay-demo {
-        @include linear-gradient(50deg, palette(primary, accent) 0%, palette(primary, base) 100%);
+        @include linear-gradient(50deg, palette(primary, light) 0%, palette(primary, base) 100%);
         padding: spacing-vertical(mid-large) spacing-horizontal(mid-large);
     }
 }
@@ -150,7 +150,7 @@
     }
 
     .is-current {
-        background-color: palette(grayscale-cool, x-trans);
+        background-color: palette(grayscale, x-trans);
     }
 
 }
@@ -175,7 +175,7 @@
 .pldoc-tab-content {
     @extend %depth-2;
     @include transition(box-shadow timing(fast) ease-in-out);
-    border: rem(1) solid palette(grayscale, x-light);
+    border: rem(1) solid palette(grayscale, base);
     padding: spacing-horizontal(base);
 }
 
@@ -245,7 +245,7 @@
 .pldoc-tab-labels {
     @include clearfix();
     @extend %reset-lists;
-    border-bottom: $pldoc-tab-label-height solid palette(grayscale, x-light);
+    border-bottom: $pldoc-tab-label-height solid palette(grayscale, base);
 }
 
 .pldoc-tab-heading {
@@ -271,8 +271,8 @@
 
         &:hover,
         &:focus {
-            border-bottom-color: palette(primary, accent);
-            color: palette(primary, accent);
+            border-bottom-color: palette(primary, light);
+            color: palette(primary, light);
         }
 
         &.is-active {
@@ -320,7 +320,7 @@
         }
 
         &.accent {
-            background: palette(primary, accent);
+            background: palette(primary, light);
         }
 
         &.x-accent {
@@ -376,11 +376,11 @@
         }
 
         &.light {
-            background: palette(grayscale, light);
+            background: palette(grayscale, base);
         }
 
         &.x-light {
-            background: palette(grayscale, x-light);
+            background: palette(grayscale, base);
         }
 
         &.xx-light {
@@ -424,43 +424,43 @@
         }
     }
 
-    .grayscale-cool {
-        background: palette(grayscale-cool, base);
+    .grayscale {
+        background: palette(grayscale, base);
 
         &.base {
-            background: palette(grayscale-cool, base);
+            background: palette(grayscale, base);
         }
 
         &.light {
-            background: palette(grayscale-cool, light);
+            background: palette(grayscale, light);
         }
 
         &.x-light {
-            background: palette(grayscale-cool, x-light);
+            background: palette(grayscale, x-light);
         }
 
         &.xx-light {
-            background: palette(grayscale-cool, xx-light);
+            background: palette(grayscale, xx-light);
         }
 
         &.dark {
-            background: palette(grayscale-cool, dark);
+            background: palette(grayscale, dark);
         }
 
         &.x-dark {
-            background: palette(grayscale-cool, x-dark);
+            background: palette(grayscale, x-dark);
         }
 
         &.trans {
-            background: palette(grayscale-cool, trans);
+            background: palette(grayscale, trans);
         }
 
         &.x-trans {
-            background: palette(grayscale-cool, x-trans);
+            background: palette(grayscale, x-trans);
         }
 
         &.xx-trans {
-            background: palette(grayscale-cool, xx-trans);
+            background: palette(grayscale, xx-trans);
         }
     }
 
@@ -757,7 +757,7 @@
         }
 
         .copy {
-            color: palette(grayscale, x-light);
+            color: palette(grayscale, base);
         }
     }
 

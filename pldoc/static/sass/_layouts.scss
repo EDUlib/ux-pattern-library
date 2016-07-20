@@ -68,7 +68,7 @@
 
 // sidebar
 .pldoc-wrapper-content-supplemental {
-    background-color: palette(grayscale-cool, xx-light);
+    background-color: palette(grayscale, xx-light);
     padding: spacing-vertical(small);
 
     @include susy-breakpoint($bp-screen-md, $susy-default) {

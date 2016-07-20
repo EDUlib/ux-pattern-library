@@ -54,114 +54,79 @@ $bp-screen-xl:                  1280px !default;
 // color: config
 $transparent:                   rgba(0, 0, 0, 0);
 
-$black:                         rgb(17, 16, 16);
-$black-t:                       rgb(0, 0, 0); // true black
-$white:                         rgb(252, 252, 252);
-$white-t:                       rgb(255, 255, 255); // true white
-$gray:                          rgb(167, 164, 164);
-$gray-cool:                     rgb(158, 177, 185);
+$black:                         rgb(22, 22, 22);
+$white:                         rgb(255, 255, 255);
+$gray:                          rgb(242, 242, 242);
 $red:                           rgb(178, 6, 16);
 $yellow:                        rgb(253, 188, 86);
-$green:                         rgb(37, 184, 90);
-$blue:                          rgb(0, 121, 188);
-$pink:                          rgb(203, 89, 141);
+$green:                         rgb(0, 129, 0);
+$blue:                          rgb(0, 116, 180);
+$pink:                          rgb(194, 56, 125);
 
 // colors:                      brand
 $brand-primary:                 $blue !default;
-$brand-primary-accent:          rgb(14, 166, 236) !default;
 $brand-secondary:               $pink !default;
-$brand-secondary-accent:        rgb(242, 108, 170) !default;
 
 // colors: utilities
-$success: $green !default;
-$warning: $yellow !default;
-$error: $red !default;
-$information: mix($gray-cool, $brand-primary, 70%) !default;
+$success:                       $green !default;
+$warning:                       $yellow !default;
+$error:                         $red !default;
+$information:                   $blue !default;
 
 // colors: palettes
 $palettes: (
     primary: (
+        x-dark:     darken($brand-primary, 25%),
+        dark:       darken($brand-primary, 10%),
         base:       $brand-primary,
-        light:      mix($white, $brand-primary, 33%),
-        x-light:    mix($white, $brand-primary, 66%),
-        dark:       mix($black, $brand-primary, 33%),
-        x-dark:     mix($black, $brand-primary, 66%),
-        accent:     $brand-primary-accent,
-        x-accent:   saturate($brand-primary-accent, 25%),
-        trans:      transparentize($brand-primary, 0.50),
-        x-trans:    transparentize($brand-primary, 0.75),
-        xx-trans:   transparentize($brand-primary, 0.95)
+        light:      lighten($brand-primary, 10%),
+        x-light:    lighten($brand-primary, 60%)
     ),
     secondary: (
+        x-dark:     darken($brand-secondary, 25%),
+        dark:       darken($brand-secondary, 10%),
         base:       $brand-secondary,
-        light:      mix($white, $brand-secondary, 33%),
-        x-light:    mix($white, $brand-secondary, 66%),
-        dark:       mix($black, $brand-secondary, 33%),
-        x-dark:     mix($black, $brand-secondary, 66%),
-        accent:     $brand-secondary-accent
+        light:      lighten($brand-secondary, 10%),
+        x-light:    lighten($brand-secondary, 60%)
     ),
     grayscale: (
+        x-dark:     darken($gray, 70%),
+        dark:       darken($gray, 35%),
         base:       $gray,
-        light:      mix($white, $gray, 50%),
-        x-light:    mix($white, $gray, 75%),
-        xx-light:   mix($white, $gray, 85%),
-        white:      $white,
-        white-t:    $white-t,
-        dark:       mix($black, $gray, 40%),
-        x-dark:     mix($black, $gray, 60%),
-        black:      $black,
-        black-t:    $black-t,
-        trans:      transparentize($gray, 0.50),
-        x-trans:    transparentize($gray, 0.75),
-        xx-trans:   transparentize($gray, 0.95)
-    ),
-    grayscale-cool: (
-        base:       $gray-cool,
-        light:      mix($white, $gray-cool, 50%),
-        x-light:    mix($white, $gray-cool, 75%),
-        xx-light:   mix($white, $gray-cool, 85%),
-        dark:       mix($black, $gray-cool, 50%),
-        x-dark:     mix($black, $gray-cool, 75%),
-        trans:      transparentize($gray-cool, 0.50),
-        x-trans:    transparentize($gray-cool, 0.75),
-        xx-trans:   transparentize($gray-cool, 0.95)
+        trans:      transparentize($gray, 0.65)
     ),
     success: (
+        x-dark:     darken($success, 10%),
+        dark:       darken($success, 5%),
         base:       $success,
-        light:      mix($white, $success, 33%),
-        dark:       mix($black, $success, 33%),
-        trans:      transparentize($success, 0.50),
-        x-trans:    transparentize($success, 0.75),
-        xx-trans:   transparentize($success, 0.95)
+        light:      lighten($success, 5%),
+        x-light:    lighten($success, 70%)
     ),
     error: (
+        x-dark:     darken($error, 10%),
+        dark:       darken($error, 5%),
         base:       $error,
-        light:      mix($white, $error, 33%),
-        dark:       mix($black, $error, 33%),
-        trans:      transparentize($error, 0.50),
-        x-trans:    transparentize($error, 0.75),
-        xx-trans:   transparentize($error, 0.95)
+        light:      lighten($error, 5%),
+        x-light:    lighten($error, 70%)
     ),
     warning: (
+        x-dark:     darken($warning, 10%),
+        dark:       darken($warning, 5%),
         base:       $warning,
-        light:      mix($white, $warning, 33%),
-        dark:       mix($black, $warning, 33%),
-        trans:      transparentize($warning, 0.50),
-        x-trans:    transparentize($warning, 0.75),
-        xx-trans:   transparentize($warning, 0.95)
+        light:      lighten($warning, 5%),
+        x-light:    lighten($warning, 70%)
     ),
     information: (
+        x-dark:     darken($information, 10%),
+        dark:       darken($information, 5%),
         base:       $information,
-        light:      mix($white, $information, 33%),
-        dark:       mix($black, $information, 33%),
-        trans:      transparentize($information, 0.50),
-        x-trans:    transparentize($information, 0.75),
-        xx-trans:   transparentize($information, 0.95)
+        light:      lighten($information, 5%),
+        x-light:    lighten($information, 70%)
     ),
 );
 
 // shadows
-$shadow: transparentize(palette(grayscale, black-t), .5);
+$shadow:            transparentize($gray, 0.65);
 
 
 // ----------------------------
@@ -347,7 +312,7 @@ $timing: (
 // ----------------------------
 // base component settings
 $component-focus-color:                     inherit !default;
-$component-focus-bg:                        palette(primary, xx-trans) !default;
+$component-focus-bg:                        palette(primary, x-light) !default;
 $component-active-color:                    palette(grayscale, white) !default;
 $component-active-bg:                       palette(primary, base) !default;
 $component-border-radius:                   3px !default;
@@ -356,9 +321,9 @@ $component-border-radius:                   3px !default;
 $text-base-font-family:                     $font-family-sans-serif !default;
 $text-base-color:                           palette(grayscale, x-dark) !default;
 $text-base-font-weight:                     font-weight(normal) !default;
-$text-base-focus-color:                     palette(grayscale, black-t) !default;
+$text-base-focus-color:                     palette(grayscale, black) !default;
 
-$text-emphasized-color:                     palette(grayscale, black-t) !default;
+$text-emphasized-color:                     palette(grayscale, black) !default;
 $text-emphasized-font-weight:               font-weight(normal) !default;
 
 $text-de-emphasized-color:                  palette(grayscale, dark) !default;

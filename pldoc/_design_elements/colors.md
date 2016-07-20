@@ -16,6 +16,37 @@ description:  Predefined system and configurable colors with calculated ranges
 info: These are the predefined colors used throughout our patterns. Values here (noted by our Sass variable name, the RGB value and the HEX value) are used for backgrounds, text color, and decorative elements. Note - when using any values here, make sure that any text on a background passes WCAG AA guidelines for color contrast.
 ---
 
+<h3 class="hd-6 example-set-hd">Base Palette</h3>
+<div class="example-set">
+    <div class="example example-color brand-primary base on-white">
+        <div class="color-info">
+            <span class="color-class">primary</span>
+            <span class="color-reference">
+                <span class="sr-only">Use this color in your sass:</span>
+                <span class="is-copyable">$brand-primary</span>
+            </span>
+        </div>
+    </div>
+    <div class="example example-color brand-primary base on-gray">
+        <div class="color-info">
+            <span class="color-class">primary</span>
+            <span class="color-reference">
+                <span class="sr-only">Use this color in your sass:</span>
+                <span class="is-copyable">$brand-primary</span>
+            </span>
+        </div>
+    </div>
+    <div class="example example-color brand-primary base on-dark">
+        <div class="color-info">
+            <span class="color-class">primary</span>
+            <span class="color-reference">
+                <span class="sr-only">Use this color in your sass:</span>
+                <span class="is-copyable">$brand-primary</span>
+            </span>
+        </div>
+    </div>
+</div>
+
 <h3 class="hd-6 example-set-hd">Brand Primary</h3>
 <div class="example-set">
     <div class="example example-color brand-primary x-dark lod">

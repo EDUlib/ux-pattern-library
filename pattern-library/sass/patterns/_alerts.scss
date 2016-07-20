@@ -17,7 +17,7 @@ $alert-background-color: palette(grayscale, white) !default;
 $alert-icon-color: palette(grayscale, white) !default;
 $alert-border-radius: spacing-vertical(xx-small) !default;
 // border around the sides and bottom
-$alert-border: rem(1) solid palette(grayscale-cool, light) !default;
+$alert-border: rem(1) solid palette(grayscale, light) !default;
 
 // alert colors
 $alert-information-color: palette(information, base) !default;
@@ -64,7 +64,7 @@ $alert-success-color: palette(success, base) !default;
     border-top-right-radius: 0;
     padding: spacing-vertical(small) spacing-horizontal(base);
     overflow: auto;
-    box-shadow: 0 rem(2) rem(2) 0 palette(grayscale-cool, xx-light);
+    box-shadow: 0 rem(2) rem(2) 0 palette(grayscale, base);
 }
 
 .alert-icon {

@@ -36,7 +36,7 @@ $label-color-active:                        palette(grayscale, x-dark) !default;
 
 $input-placeholder-text:                    palette(grayscale, base) !default;
 
-$input-default-background:                  palette(grayscale, white) !default;
+$input-default-background:                  palette(grayscale, base) !default;
 $input-default-background-focus:            $input-default-background !default;
 $input-check-radio-background:              palette(grayscale, base) !default;
 $input-check-radio-checked-background:      palette(primary, base) !default;
@@ -160,7 +160,7 @@ $field-required-color:                      $label-color !default;
     &.has-error {
         padding: spacing-vertical(x-small);
         background: palette(error, base);
-        color: palette(grayscale, white);
+        color: palette(grayscale, base);
     }
 }
 

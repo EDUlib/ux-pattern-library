@@ -107,26 +107,26 @@ $palettes: (
         dark:       darken($error, 5%),
         base:       $error,
         light:      lighten($error, 5%),
-        x-light:    lighten($error, 70%)
+        x-light:    lighten($error, 60%)
     ),
     warning: (
         x-dark:     darken($warning, 10%),
         dark:       darken($warning, 5%),
         base:       $warning,
         light:      lighten($warning, 5%),
-        x-light:    lighten($warning, 70%)
+        x-light:    lighten($warning, 28%)
     ),
     information: (
         x-dark:     darken($information, 10%),
         dark:       darken($information, 5%),
         base:       $information,
         light:      lighten($information, 5%),
-        x-light:    lighten($information, 70%)
+        x-light:    lighten($information, 57%)
     ),
 );
 
 // shadows
-$shadow:            transparentize($gray, 0.65);
+$shadow:            rgba(0, 0, 0, .25);
 
 
 // ----------------------------
@@ -313,7 +313,7 @@ $timing: (
 // base component settings
 $component-focus-color:                     inherit !default;
 $component-focus-bg:                        palette(primary, x-light) !default;
-$component-active-color:                    palette(grayscale, white) !default;
+$component-active-color:                    palette(grayscale, base) !default;
 $component-active-bg:                       palette(primary, base) !default;
 $component-border-radius:                   3px !default;
 

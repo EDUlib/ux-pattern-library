@@ -17,7 +17,7 @@
 $table-cell-padding:                        spacing-vertical(x-small) spacing-horizontal(small) !default;
 $table-condensed-cell-padding:              spacing-vertical(xx-small) spacing-horizontal(x-small) !default;
 $table-extra-cell-padding:                  spacing-vertical(small) spacing-horizontal(base) !default;
-$table-bg:                                  palette(grayscale, white) !default;
+$table-bg:                                  palette(grayscale, base) !default;
 $table-accent-bg:                           palette(primary, light) !default;
 $table-focus-bg:                            palette(grayscale, trans) !default;
 $table-active-bg:                           $component-active-bg !default;

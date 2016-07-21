@@ -9,6 +9,7 @@ gulp.task('build-development', function(callback) {
         'images',
         'scripts',
         'pldoc-scripts',
+        'copy-pldoc-json',
         'demo-scripts',
         'demo-styles',
         'copy-pattern-library',

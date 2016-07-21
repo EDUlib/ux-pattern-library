@@ -78,6 +78,7 @@ module.exports = {
         // documentation site
         pldoc_src: pldocSrc + '/static/js',
         pldoc_src_files: pldocSrc + '/static/js/**/*.js',
+        pldoc_src_json: pldocSrc + '/static/js/**/*.json',
 
         // example demo
         demo_src: demoSrc + '/static/js',

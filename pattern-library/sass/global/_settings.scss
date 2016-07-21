@@ -87,7 +87,7 @@ $palettes: (
         dark:       darken($brand-secondary, 10%),
         base:       $brand-secondary,
         light:      lighten($brand-secondary, 10%),
-        x-light:    lighten($brand-secondary, 60%)
+        x-light:    lighten($brand-secondary, 48%)
     ),
     grayscale: (
         x-dark:     darken($gray, 70%),
@@ -121,7 +121,7 @@ $palettes: (
         dark:       darken($information, 5%),
         base:       $information,
         light:      lighten($information, 5%),
-        x-light:    lighten($information, 57%)
+        x-light:    lighten($information, 58%)
     ),
 );
 

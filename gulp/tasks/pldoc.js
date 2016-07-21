@@ -16,6 +16,11 @@ gulp.task('pldoc-scripts', ['lint-src'], function() {
         .pipe(gulp.dest(configScripts.dest));
 });
 
+gulp.task('copy-pldoc-json', function() {
+    return gulp.src([configScripts.pldoc_src + '/**.json'])
+        .pipe(gulp.dest(configScripts.dest));
+});
+
 gulp.task('copy-pattern-library', function() {
     gulp.src([config.patternLibrary.src_files])
         .pipe(gulp.dest(config.patternLibrary.dest));

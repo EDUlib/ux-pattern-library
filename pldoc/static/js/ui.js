@@ -2,6 +2,7 @@ define([
     'jquery',
     './tabs.js',
     './size-slider.js',
+    './colors.js',
     './color-contrast.js',
     'edx-pattern-library/js/select-replace.js',
     'edx-ui-toolkit/js/disclosure/disclosure-view.js'

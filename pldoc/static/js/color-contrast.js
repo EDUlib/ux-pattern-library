@@ -38,15 +38,16 @@ define([
         checkContrast: function() {
             var bg, fg, ratio, ratios;
 
-            $('.example-color').each(function() {
-                bg = AccessibilityColorContrast.getL(
-                    AccessibilityColorContrast.rgbaToHex(
+            $('button.swatch').each(function() {
+                bg = this.getL(
+                    this.rgbaToHex(
                         $(this).css('backgroundColor')
                     )
                 );
-                fg = AccessibilityColorContrast.getL(
-                    AccessibilityColorContrast.rgbaToHex(
-                        $(this).find('.color-class').css('color')
+                fg = this.getL(
+                    this.rgbaToHex(
+                        $(this).parent().parent()
+                            .css('backgroundColor')
                     )
                 );
 
@@ -55,7 +56,7 @@ define([
 
                 if (ratio < ratios[0]) {
                     // Text should pass for normal sized text (non-headings)
-                    AccessibilityColorContrast.applyHighlighting($(this));
+                    this.applyHighlighting($(this));
                 }
 
                 if (ratio < ratios[1]) {
@@ -70,14 +71,14 @@ define([
                 update = false;
 
             if (color.length === 3) {
-                R = AccessibilityColorContrast.getsRGB(color.substring(0, 1) + color.substring(0, 1));
-                G = AccessibilityColorContrast.getsRGB(color.substring(1, 2) + color.substring(1, 2));
-                B = AccessibilityColorContrast.getsRGB(color.substring(2, 3) + color.substring(2, 3));
+                R = this.getsRGB(color.substring(0, 1) + color.substring(0, 1));
+                G = this.getsRGB(color.substring(1, 2) + color.substring(1, 2));
+                B = this.getsRGB(color.substring(2, 3) + color.substring(2, 3));
                 update = true;
             } else if (color.length === 6) {
-                R = AccessibilityColorContrast.getsRGB(color.substring(0, 2));
-                G = AccessibilityColorContrast.getsRGB(color.substring(2, 4));
-                B = AccessibilityColorContrast.getsRGB(color.substring(4, 6));
+                R = this.getsRGB(color.substring(0, 2));
+                G = this.getsRGB(color.substring(2, 4));
+                B = this.getsRGB(color.substring(4, 6));
                 update = true;
             } else {
                 update = false;
@@ -92,7 +93,7 @@ define([
         },
 
         getsRGB: function(color) {
-            var colorValue = AccessibilityColorContrast.getRGB(color);
+            var colorValue = this.getRGB(color);
             if (colorValue !== false) {
                 colorValue = colorValue / 255;
                 colorValue = (colorValue <= 0.03928) ? colorValue / 12.92 :
@@ -117,7 +118,7 @@ define([
 
         applyHighlighting: function(swatch) {
             $(swatch)
-                .addClass(AccessibilityColorContrast.vars.failClass);
+                .addClass(this.vars.failClass);
         }
 
     };

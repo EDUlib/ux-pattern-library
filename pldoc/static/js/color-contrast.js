@@ -117,8 +117,15 @@ define([
         },
 
         applyHighlighting: function(swatch) {
+            var title, newTitle;
+
             $(swatch)
                 .addClass(AccessibilityColorContrast.vars.failClass);
+
+            title = $(swatch).attr('title');
+            newTitle = title + '. Take care when using this color with certain color combinations!';
+
+            $(swatch).attr('title', newTitle);
         }
 
     };

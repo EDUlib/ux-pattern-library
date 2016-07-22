@@ -13,7 +13,7 @@ slug:         colors
 
 description:  Predefined system and configurable colors with calculated ranges
 
-info: These are the predefined colors used throughout our patterns. Each color is displayed on various background colors for easy combinations. Those colors which have a yellow flag are not accessible combinations and should be avoided. For example, our grayscale below does not provide enough contrast on a white background (nor white on the gray background). Click any color for more information and developer values.
+info: These are the predefined colors used throughout our patterns. Each color is displayed on various background colors for easy combinations. Those colors which have a yellow warning icon are not accessible combinations and should be avoided. For example, our grayscale below does not provide enough contrast on a white background (nor white on the gray background). Click any color for more information and developer values.
 ---
 
 <div class="info-pane is-hidden" tabindex="-1">

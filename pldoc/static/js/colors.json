@@ -4,35 +4,35 @@
         "title": "Primary X-Dark",
         "description": "The darkest shade of the primary color.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "dark": [{
         "title": "Primary Dark",
         "description": "A darker shade of the base primary color.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "base": [{
         "title": "Base Primary",
         "description": "The base primary color intended for main use.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "light": [{
         "title": "Primary Light",
         "description": "A lighter tint of the primary base color.",
         "recs": [{
-            "back": ["dark","x-dark"]
+            "back": ["dark","x-dark","black"]
         }]
     }],
     "x-light": [{
         "title": "Primary X-Light",
         "description": "A very light, near white, tint of the primary base color.",
         "recs": [{
-            "back": ["dark","x-dark"]
+            "back": ["dark","x-dark","black"]
         }]
     }]
 }, {
@@ -41,35 +41,35 @@
         "title": "Secondary X-Dark",
         "description": "The darkest shade of the secondary color.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "dark": [{
         "title": "Secondary Dark",
         "description": "A darker shade of the base secondary color.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "base": [{
         "title": "Base Secondary",
         "description": "The base secondary color intended for main use.",
         "recs": [{
-            "back": ["light","x-light"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "light": [{
         "title": "Secondary Light",
         "description": "A lighter tint of the secondary base color.",
         "recs": [{
-            "back": ["dark","x-dark"]
+            "back": ["dark","x-dark","black"]
         }]
     }],
     "x-light": [{
         "title": "Secondary X-Light",
         "description": "A very light, near white, tint of the secondary base color.",
         "recs": [{
-            "back": ["dark","x-dark"]
+            "back": ["dark","x-dark","black"]
         }]
     }]
 }, {
@@ -90,14 +90,14 @@
     }],
     "base": [{
         "title": "Base Gray",
-        "description": "The base gray, near white and typically used for backgrounds.",
+        "description": "The base, middle-of-the-road gray.",
         "recs": [{
-            "back": ["black","dark","x-dark"]
+            "back": ["Not recommended as a foreground color"]
         }]
     }],
     "back": [{
         "title": "Gray Background",
-        "description": "A light gray used for backgrounds.",
+        "description": "A light, near white gray used for backgrounds.",
         "recs": [{
             "back": ["black","dark","x-dark"]
         }]

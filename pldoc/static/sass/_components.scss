@@ -420,6 +420,10 @@
                 color: palette(information, back);
             }
         }
+        
+        button.swatch {
+            border: rem(1) solid rgba(0, 0, 0, .15);
+        }
     
         .swatch {
             @include transition(all timing(x-fast) ease-in-out);
@@ -584,8 +588,21 @@
             }
             
             &.fail-a11y-color {
-                
+
                 &:before {
+                    // warning icon
+                    display: inline-block;
+                    position: absolute;
+                    left: $baseline;
+                    top: $baseline;
+                    content: "\F071";
+                    font: normal normal normal 16px/1 FontAwesome;
+                    color: palette(warning, accent);
+                    text-shadow: -1px -1px 0px $white, 1px 1px 0px $shadow;
+                }
+
+                // dog ear
+                /*&:before {
                     content: " ";
                     display: block;
                     position: absolute;
@@ -596,9 +613,7 @@
                     border-style: solid;
                     border-width: 24px 24px 0 0;
                     border-color: palette(warning, accent) transparent transparent transparent;
-                }
-                /*border-left: rem($baseline/4) solid palette(warning, accent);
-                box-shadow: inset 1px 0 0px $white;*/
+                }*/
             }
             
             .color-meta {

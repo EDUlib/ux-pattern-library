@@ -106,7 +106,7 @@
         "title": "Transparent Gray",
         "description": "The base gray but at 65% opacity.",
         "recs": [{
-            "back": ["Not recommended"]
+            "back": ["Not recommended as a foreground color"]
         }]
     }]
 }, {

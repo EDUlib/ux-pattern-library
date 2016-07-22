@@ -18,24 +18,21 @@
         "title": "Base Primary",
         "description": "The base primary color intended for main use.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "light": [{
         "title": "Primary Light",
         "description": "A lighter tint of the primary base color.",
         "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "x-light": [{
         "title": "Primary X-Light",
         "description": "A very light, near white, tint of the primary base color.",
         "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }]
 }, {
@@ -44,40 +41,35 @@
         "title": "Secondary X-Dark",
         "description": "The darkest shade of the secondary color.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "dark": [{
         "title": "Secondary Dark",
         "description": "A darker shade of the base secondary color.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "base": [{
         "title": "Base Secondary",
         "description": "The base secondary color intended for main use.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "light": [{
         "title": "Secondary Light",
         "description": "A lighter tint of the secondary base color.",
         "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "x-light": [{
         "title": "Secondary X-Light",
         "description": "A very light, near white, tint of the secondary base color.",
         "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }]
 }, {
@@ -86,7 +78,6 @@
         "title": "Grayscale X-Dark",
         "description": "A very dark shade of the base gray.",
         "recs": [{
-            "fore": ["white","light","x-light"],
             "back": ["black","dark","x-dark"]
         }]
     }],
@@ -94,192 +85,90 @@
         "title": "Grayscale Dark",
         "description": "A darker shade of the base gray.",
         "recs": [{
-            "fore": ["white","x-light"],
-            "back": ["black","x-dark"]
+            "back": ["white","x-light"]
         }]
     }],
     "base": [{
         "title": "Base Gray",
         "description": "The base gray, near white and typically used for backgrounds.",
         "recs": [{
-            "fore": ["black","dark","x-dark"],
-            "back": ["white","light","x-light"]
+            "back": ["black","dark","x-dark"]
+        }]
+    }],
+    "back": [{
+        "title": "Gray Background",
+        "description": "A light gray used for backgrounds.",
+        "recs": [{
+            "back": ["black","dark","x-dark"]
         }]
     }],
     "trans": [{
         "title": "Transparent Gray",
         "description": "The base gray but at 65% opacity.",
         "recs": [{
-            "fore": ["Not recommended"],
-            "back": ["black","dark","x-dark"]
+            "back": ["Not recommended"]
         }]
     }]
 }, {
     "color": "success",
-    "x-dark": [{
-        "title": "Success X-Dark",
-        "description": "The darkest shade of the success color.",
+    "text": [{
+        "title": "Success Text",
+        "description": "Text color for success messaging.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "fore": ["white","back"]
         }]
     }],
-    "dark": [{
-        "title": "Success Dark",
-        "description": "A darker shade of the base success color.",
+    "accent": [{
+        "title": "Success Accent",
+        "description": "A slightly lighter tint for success messaging accents.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["white","back"]
         }]
     }],
-    "base": [{
-        "title": "Base Success",
-        "description": "The base success color intended for main use.",
+    "back": [{
+        "title": "Success Background",
+        "description": "Success messaging background color.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "light": [{
-        "title": "Success Light",
-        "description": "A lighter tint of the success base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
-        }]
-    }],
-    "x-light": [{
-        "title": "Success X-Light",
-        "description": "A very light, near white, tint of the success base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["Not recommended"]
         }]
     }]
 }, {
     "color": "error",
-    "x-dark": [{
-        "title": "Error X-Dark",
-        "description": "The darkest shade of the error color.",
+    "text": [{
+        "title": "Error Text",
+        "description": "Text color for error messaging.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "fore": ["white","back"]
         }]
     }],
-    "dark": [{
-        "title": "Error Dark",
-        "description": "A darker shade of the base error color.",
+    "accent": [{
+        "title": "Error Accent",
+        "description": "A slightly lighter tint for error messaging accents.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["white","back"]
         }]
     }],
-    "base": [{
-        "title": "Base Error",
-        "description": "The base error color intended for main use.",
+    "back": [{
+        "title": "Error Background",
+        "description": "Error messaging background color.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "light": [{
-        "title": "Error Light",
-        "description": "A lighter tint of the error base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
-        }]
-    }],
-    "x-light": [{
-        "title": "Error X-Light",
-        "description": "A very light, near white, tint of the error base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["Not recommended"]
         }]
     }]
 }, {
     "color": "warning",
-    "x-dark": [{
-        "title": "Warning X-Dark",
-        "description": "The darkest shade of the warning color.",
+    "accent": [{
+        "title": "Warning Accent",
+        "description": "A slightly lighter tint for warning messaging accents.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
+            "back": ["white","back"]
         }]
     }],
-    "dark": [{
-        "title": "Warning Dark",
-        "description": "A darker shade of the base warning color.",
+    "back": [{
+        "title": "Warning Background",
+        "description": "Warning messaging background color.",
         "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "base": [{
-        "title": "Base Warning",
-        "description": "The base warning color intended for main use.",
-        "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "light": [{
-        "title": "Warning Light",
-        "description": "A lighter tint of the warning base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
-        }]
-    }],
-    "x-light": [{
-        "title": "Warning X-Light",
-        "description": "A very light, near white, tint of the warning base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
-        }]
-    }]
-}, {
-    "color": "information",
-    "x-dark": [{
-        "title": "Information X-Dark",
-        "description": "The darkest shade of the information color.",
-        "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "dark": [{
-        "title": "Information Dark",
-        "description": "A darker shade of the base information color.",
-        "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "base": [{
-        "title": "Base Information",
-        "description": "The base information color intended for main use.",
-        "recs": [{
-            "fore": ["light","x-light"],
-            "back": ["dark","x-dark"]
-        }]
-    }],
-    "light": [{
-        "title": "Information Light",
-        "description": "A lighter tint of the information base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
-        }]
-    }],
-    "x-light": [{
-        "title": "Information X-Light",
-        "description": "A very light, near white, tint of the information base color.",
-        "recs": [{
-            "fore": ["dark","x-dark"],
-            "back": ["light","x-light"]
+            "back": ["Not recommended"]
         }]
     }]
 }]

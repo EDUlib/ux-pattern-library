@@ -17,12 +17,14 @@ info: These are the predefined colors used throughout our patterns. Values here 
 ---
 
 <div class="info-pane is-hidden" tabindex="-1">
-    <button type="button" class="close-button">
-        <span class="icon fa fa-close" aria-hidden="true"></span>
-        <span>Close</span>
-    </button>
-    <h2 class="hd-4 color-info-title"></h2>
-    <div class="color-description"></div>
+    <header class="info-pane-header">
+        <button type="button" class="close-button">
+            <span class="icon fa fa-close" aria-hidden="true"></span>
+            <span>Close</span>
+        </button>
+        <h2 class="hd-4 color-info-title"></h2>
+        <div class="color-description"></div>
+    </header>
     <div class="color-info-content">
         <div class="color-usage">
             <p>Optimum color combinations:</p>
@@ -383,6 +385,13 @@ info: These are the predefined colors used throughout our patterns. Values here 
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
+                            <span class="color-class">background</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-2">
+                    <div class="swatch">
+                        <div class="color-info">
                             <span class="color-class">trans</span>
                         </div>
                     </div>
@@ -405,9 +414,11 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch grayscale base" title="Grayscale Base on white"></button>
                 </div>
                 <div class="col col-2">
+                    <button type="button" class="swatch grayscale back" title="Gray Background on white"></button>
+                </div>
+                <div class="col col-2">
                     <button type="button" class="swatch grayscale trans" title="Transparent gray on white"></button>
                 </div>
-                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
@@ -425,9 +436,11 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch grayscale base" title="Grayscale Base on gray"></button>
                 </div>
                 <div class="col col-2">
+                    <button type="button" class="swatch grayscale back" title="Gray Background on white"></button>
+                </div>
+                <div class="col col-2">
                     <button type="button" class="swatch grayscale trans" title="Transparent gray on gray"></button>
                 </div>
-                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
@@ -445,9 +458,11 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch grayscale base" title="Grayscale Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
+                    <button type="button" class="swatch grayscale back" title="Gray Background on white"></button>
+                </div>
+                <div class="col col-2">
                     <button type="button" class="swatch grayscale trans" title="Transparent gray on its darkest shade"></button>
                 </div>
-                <div class="col col-2 post-2"></div>
             </div>
         </div>
     </div>
@@ -458,42 +473,28 @@ info: These are the predefined colors used throughout our patterns. Values here 
     <div class="example-container">
         <div class="grid-container grid-manual">
             <div class="row">
-                <div class="col col-2"></div>
                 <div class="col col-2 pre-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">x-dark</span>
+                            <span class="color-class">text</span>
                         </div>
                     </div>
                 </div>
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">dark</span>
+                            <span class="color-class">accent</span>
                         </div>
                     </div>
                 </div>
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">base</span>
+                            <span class="color-class">background</span>
                         </div>
                     </div>
                 </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">light</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">x-light</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-white">
                 <div class="col col-2">
@@ -502,20 +503,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark" title="Success X-Dark on white"></button>
+                    <button type="button" class="swatch success text" title="Success Text on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark" title="Success Dark on white"></button>
+                    <button type="button" class="swatch success accent" title="Success Accent on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base" title="Success Base on white"></button>
+                    <button type="button" class="swatch success back" title="Success Background on white"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success light" title="Success Light on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success x-light" title="Success X-Light on white"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
@@ -524,20 +520,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark" title="Success X-Dark on gray"></button>
+                    <button type="button" class="swatch success text" title="Success Text on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark" title="Success Dark on gray"></button>
+                    <button type="button" class="swatch success accent" title="Success Accent on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base" title="Success Base on gray"></button>
+                    <button type="button" class="swatch success back" title="Success Background on gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success light" title="Success Light on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success x-light" title="Success X-Light on gray"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-success">
                 <div class="col col-2">
@@ -546,20 +537,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark" title="Success X-Dark on itself"></button>
+                    <button type="button" class="swatch success text" title="Success Text on dark"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark" title="Success Dark on its darkest shade"></button>
+                    <button type="button" class="swatch success accent" title="Success Accent on dark"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base" title="Success Base on its darkest shade"></button>
+                    <button type="button" class="swatch success back" title="Success Background on dark"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success light" title="Success Light on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success x-light" title="Success X-Light on its darkest shade"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
@@ -568,20 +554,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark" title="Success X-Dark on dark gray"></button>
+                    <button type="button" class="swatch success text" title="Success Text on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark" title="Success Dark on dark gray"></button>
+                    <button type="button" class="swatch success accent" title="Success Accent on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base" title="Success Base on dark gray"></button>
+                    <button type="button" class="swatch success back" title="Success Background on dark gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success light" title="Success Light on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch success x-light" title="Success X-Light on dark gray"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
         </div>
     </div>
@@ -592,42 +573,28 @@ info: These are the predefined colors used throughout our patterns. Values here 
     <div class="example-container">
         <div class="grid-container grid-manual">
             <div class="row">
-                <div class="col col-2"></div>
                 <div class="col col-2 pre-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">x-dark</span>
+                            <span class="color-class">text</span>
                         </div>
                     </div>
                 </div>
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">dark</span>
+                            <span class="color-class">accent</span>
                         </div>
                     </div>
                 </div>
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">base</span>
+                            <span class="color-class">background</span>
                         </div>
                     </div>
                 </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">light</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">x-light</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-white">
                 <div class="col col-2">
@@ -636,20 +603,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark" title="Error X-Dark on white"></button>
+                    <button type="button" class="swatch error text" title="Error Text on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark" title="Error Dark on white"></button>
+                    <button type="button" class="swatch error accent" title="Error Accent on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base" title="Error Base on white"></button>
+                    <button type="button" class="swatch error back" title="Error Background on white"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error light" title="Error Light on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error x-light" title="Error X-Light on white"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
@@ -658,20 +620,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark" title="Error X-Dark on gray"></button>
+                    <button type="button" class="swatch error text" title="Error Text on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark" title="Error Dark on gray"></button>
+                    <button type="button" class="swatch error accent" title="Error Accent on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base" title="Error Base on gray"></button>
+                    <button type="button" class="swatch error back" title="Error Background on gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error light" title="Error Light on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error x-light" title="Error X-Light on gray"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-error">
                 <div class="col col-2">
@@ -680,20 +637,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark" title="Error X-Dark on itself"></button>
+                    <button type="button" class="swatch error text" title="Error Text on dark"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark" title="Error Dark on its darkest shade"></button>
+                    <button type="button" class="swatch error accent" title="Error Accent on dark"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base" title="Error Base on its darkest shade"></button>
+                    <button type="button" class="swatch error back" title="Error Background on dark"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error light" title="Error Light on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error x-light" title="Error X-Light on its darkest shade"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
@@ -702,20 +654,15 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark" title="Error X-Dark on dark gray"></button>
+                    <button type="button" class="swatch error text" title="Error Text on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark" title="Error Dark on dark gray"></button>
+                    <button type="button" class="swatch error accent" title="Error Accent on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base" title="Error Base on dark gray"></button>
+                    <button type="button" class="swatch error back" title="Error Background on dark gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error light" title="Error Light on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch error x-light" title="Error X-Light on dark gray"></button>
-                </div>
+                <div class="col col-2 post-2"></div>
             </div>
         </div>
     </div>
@@ -726,43 +673,22 @@ info: These are the predefined colors used throughout our patterns. Values here 
     <div class="example-container">
         <div class="grid-container grid-manual">
             <div class="row">
-                <div class="col col-2"></div>
                 <div class="col col-2 pre-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">x-dark</span>
+                            <span class="color-class">accent</span>
                         </div>
                     </div>
                 </div>
                 <div class="col col-2">
                     <div class="swatch">
                         <div class="color-info">
-                            <span class="color-class">dark</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">base</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">light</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">x-light</span>
+                            <span class="color-class">background</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col col-2 post-4"></div>
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
@@ -770,20 +696,12 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on white"></button>
+                    <button type="button" class="swatch warning accent" title="Warning Accent on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark" title="Warning Dark on white"></button>
+                    <button type="button" class="swatch warning back" title="Warning Background on white"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning base" title="Warning Base on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning light" title="Warning Light on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning x-light" title="Warning X-Light on white"></button>
-                </div>
+                <div class="col col-2 post-4"></div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
@@ -792,42 +710,12 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on gray"></button>
+                    <button type="button" class="swatch warning accent" title="Warning Accent on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark" title="Warning Dark on gray"></button>
+                    <button type="button" class="swatch warning back" title="Warning Background on gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning base" title="Warning Base on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning light" title="Warning Light on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning x-light" title="Warning X-Light on gray"></button>
-                </div>
-            </div>
-            <div class="row on-dark-warning">
-                <div class="col col-2">
-                    <div class="swatch color-description copy">
-                        On dark, with dark
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on itself"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning dark" title="Warning Dark on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning base" title="Warning Base on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning light" title="Warning Light on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning x-light" title="Warning X-Light on its darkest shade"></button>
-                </div>
+                <div class="col col-2 post-4"></div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
@@ -836,154 +724,12 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on dark gray"></button>
+                    <button type="button" class="swatch warning accent" title="Warning Accent on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark" title="Warning Dark on dark gray"></button>
+                    <button type="button" class="swatch warning back" title="Warning Background on dark gray"></button>
                 </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning base" title="Warning Base on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning light" title="Warning Light on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch warning x-light" title="Warning X-Light on dark gray"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<h3 class="hd-6 example-set-hd">Information</h3>
-<div class="example-set">
-    <div class="example-container">
-        <div class="grid-container grid-manual">
-            <div class="row">
-                <div class="col col-2"></div>
-                <div class="col col-2 pre-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">x-dark</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">dark</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">base</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">light</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <div class="swatch">
-                        <div class="color-info">
-                            <span class="color-class">x-light</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row on-white">
-                <div class="col col-2">
-                    <div class="swatch color-description copy">
-                        On white, with white
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-dark" title="Information X-Dark on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information dark" title="Information Dark on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information base" title="Information Base on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information light" title="Information Light on white"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-light" title="Information X-Light on white"></button>
-                </div>
-            </div>
-            <div class="row on-gray">
-                <div class="col col-2">
-                    <div class="swatch color-description copy">
-                        On gray, with gray
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-dark" title="Information X-Dark on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information dark" title="Information Dark on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information base" title="Information Base on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information light" title="Information Light on gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-light" title="Information X-Light on gray"></button>
-                </div>
-            </div>
-            <div class="row on-dark-information">
-                <div class="col col-2">
-                    <div class="swatch color-description copy">
-                        On dark, with dark
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-dark" title="Information X-Dark on itself"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information dark" title="Information Dark on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information base" title="Information Base on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information light" title="Information Light on its darkest shade"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-light" title="Information X-Light on its darkest shade"></button>
-                </div>
-            </div>
-            <div class="row on-dark-grayscale">
-                <div class="col col-2">
-                    <div class="swatch color-description copy">
-                        On dark gray, with dark gray
-                    </div>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-dark" title="Information X-Dark on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information dark" title="Information Dark on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information base" title="Information Base on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information light" title="Information Light on dark gray"></button>
-                </div>
-                <div class="col col-2">
-                    <button type="button" class="swatch information x-light" title="Information X-Light on dark gray"></button>
-                </div>
+                <div class="col col-2 post-4"></div>
             </div>
         </div>
     </div>

@@ -1,16 +1,15 @@
 define([
-    'jquery',
-    './color-contrast.js'
+    'jquery'
 ], function($) {
     'use strict';
 
     var $pane = $('#colors-preview .info-pane'),
-        $title = $($pane).children('.color-info-title'),
+        $title = $($pane).find('.color-info-title'),
         $desc = $($pane).find('.color-description'),
         $back = $($pane).find('.color-combinations.background'),
-        $ref = $($pane).find('.color-reference');
-        // $rgb = $($pane).find('.color-rgb'),
-        // $hex = $($pane).find('.color-hex');
+        $ref = $($pane).find('.color-reference'),
+        $rgb = $($pane).find('.color-rgb'),
+        $hex = $($pane).find('.color-hex');
 
     var $button;
 
@@ -71,8 +70,7 @@ define([
         showInformationWindow: function(classes, button) {
             var info = false,
                 back = [],
-                backHtml = '',
-                rgba;
+                backHtml = '';
 
             $(colors).each(function(i) {
                 if (colors[i].color === classes[1]) {
@@ -99,11 +97,9 @@ define([
 
                 $back.html(backHtml);
             }
-            rgba = $(button).css('backgroundColor');
-            console.log(rgba);
 
-            // $hex.text(AccessibilityColorContrast.rgbaToHex($(button).css('backgroundColor')));
-            // $rgb.text($(button).css('backgroundColor'));
+            $hex.text(ColorHandler.rgbaToHex($(button).css('backgroundColor')));
+            $rgb.text($(button).css('backgroundColor'));
         },
 
         hideInformationWindow: function() {
@@ -115,6 +111,20 @@ define([
             $title.text('');
             $desc.text('');
             $back.html('');
+        },
+
+        rgbaToHex: function(rgba) {
+            var rgbaValue = rgba.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i),
+                hex;
+
+            hex = (rgbaValue && rgbaValue.length === 4) ? '#' +
+                ('0' + parseInt(rgbaValue[1], 10).toString(16)).slice(-2) +
+                ('0' + parseInt(rgbaValue[2], 10).toString(16)).slice(-2) +
+                ('0' + parseInt(rgbaValue[3], 10).toString(16)).slice(-2) : '';
+
+            hex = hex.replace('#', '');
+
+            return hex;
         }
     };
 

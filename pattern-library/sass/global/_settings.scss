@@ -56,9 +56,9 @@ $transparent:                   rgba(0, 0, 0, 0);
 
 $black:                         rgb(22, 22, 22);
 $white:                         rgb(255, 255, 255);
-$gray:                          rgb(242, 242, 242);
+$gray:                          rgb(138, 143, 143);
 $red:                           rgb(178, 6, 16);
-$yellow:                        rgb(253, 188, 86);
+$yellow:                        rgb(255, 192, 31);
 $green:                         rgb(0, 129, 0);
 $blue:                          rgb(0, 116, 180);
 $pink:                          rgb(194, 56, 125);
@@ -90,38 +90,30 @@ $palettes: (
         x-light:    lighten($brand-secondary, 48%)
     ),
     grayscale: (
-        x-dark:     darken($gray, 70%),
+        x-dark:     darken($gray, 45%),
         dark:       darken($gray, 35%),
         base:       $gray,
-        trans:      transparentize($gray, 0.65)
+        back:       lighten($gray, 40%),
+        trans:      transparentize($gray, 0.75)
     ),
     success: (
-        x-dark:     darken($success, 10%),
-        dark:       darken($success, 5%),
-        base:       $success,
-        light:      lighten($success, 5%),
-        x-light:    lighten($success, 70%)
+        text:       $success,
+        accent:     lighten($success, 5%),
+        back:       lighten($success, 70%)
     ),
     error: (
-        x-dark:     darken($error, 10%),
-        dark:       darken($error, 5%),
-        base:       $error,
-        light:      lighten($error, 5%),
-        x-light:    lighten($error, 60%)
+        text:       $error,
+        accent:     lighten($error, 5%),
+        back:       lighten($error, 60%)
     ),
     warning: (
-        x-dark:     darken($warning, 10%),
-        dark:       darken($warning, 5%),
-        base:       $warning,
-        light:      lighten($warning, 5%),
-        x-light:    lighten($warning, 28%)
+        accent:     $warning,
+        back:       lighten($warning, 40%)
     ),
     information: (
-        x-dark:     darken($information, 10%),
-        dark:       darken($information, 5%),
-        base:       $information,
-        light:      lighten($information, 5%),
-        x-light:    lighten($information, 58%)
+        text:       $information,
+        accent:     lighten($information, 5%),
+        back:       lighten($information, 58%)
     ),
 );
 

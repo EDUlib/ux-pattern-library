@@ -20,10 +20,10 @@ $alert-border-radius: spacing-vertical(xx-small) !default;
 $alert-border: rem(1) solid palette(grayscale, light) !default;
 
 // alert colors
-$alert-information-color: palette(information, base) !default;
-$alert-warning-color: palette(warning, base) !default;
-$alert-error-color: palette(error, base) !default;
-$alert-success-color: palette(success, base) !default;
+$alert-information-color: palette(information, text) !default;
+$alert-warning-color: palette(warning, text) !default;
+$alert-error-color: palette(error, text) !default;
+$alert-success-color: palette(success, text) !default;
 
 // ----------------------------
 // #UTILITIES

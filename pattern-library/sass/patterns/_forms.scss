@@ -159,7 +159,7 @@ $field-required-color:                      $label-color !default;
 
     &.has-error {
         padding: spacing-vertical(x-small);
-        background: palette(error, base);
+        background: palette(error, text);
         color: palette(grayscale, base);
     }
 }
@@ -236,40 +236,40 @@ $field-required-color:                      $label-color !default;
 
     // STATE: has an error
     &.has-error {
-        border-color: palette(error, base);
+        border-color: palette(error, text);
 
         & + .field-hint {
-            color: palette(error, dark);
+            color: palette(error, text);
         }
 
         .icon {
-            fill: palette(error, base);
+            fill: palette(error, text);
         }
     }
 
     // STATE: has a warning
     &.has-warning {
-        border-color: palette(warning, base);
+        border-color: palette(warning, text);
 
         & + .field-hint {
-            color: palette(warning, dark);
+            color: palette(warning, text);
         }
 
         .icon {
-            fill: palette(warning, base);
+            fill: palette(warning, text);
         }
     }
 
     // STATE: is complete or valid
     &.has-success {
-        border-color: palette(success, base);
+        border-color: palette(success, text);
 
         // & + .field-hint {
-        //     color: palette(success, dark);
+        //     color: palette(success, text);
         // }
 
         .icon {
-            fill: palette(success, base);
+            fill: palette(success, text);
         }
     }
 }
@@ -298,7 +298,7 @@ $field-required-color:                      $label-color !default;
 
         &.has-error {
             border-width: 1px 1px 2px 1px;
-            border-color: palette(error, base);
+            border-color: palette(error, text);
         }
     }
 }

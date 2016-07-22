@@ -63,7 +63,7 @@
 // #HEADER
 // ------------------------------
 .pldoc-wrapper-header-site {
-    background: palette(grayscale, base);
+    background: palette(grayscale, back);
 }
 
 
@@ -296,37 +296,40 @@
 // ------------------------------
 // color swatches
 .pldoc-pattern-colors {
-    
+
     .pldoc-tab-content {
         position: relative;
-        
+
         .info-pane {
             position: fixed;
             left: 37.5%;
             width: 640px;
-            height: 387px;
-            background: palette(grayscale, base);
+            height: 400px;
+            background: $white;
             box-shadow: 0 0 5px $shadow;
             z-index: z-index(mid-front);
-            
-            .close-button {
-                @include float(right);
-                border: 0;
-                background: transparent;
-                color: palette(primary, base);
+
+            .info-pane-header {
+                padding: spacing-vertical(small);
+                background: palette(grayscale, back);
+
+                .close-button {
+                    @include float(right);
+                    border: 0;
+                    background: transparent;
+                    color: palette(primary, base);
+                }
+
+                .color-info-title {
+                    margin-bottom: 0;
+                    font-weight: font-weight(bold);
+                }
+
+                .color-description {
+                    margin-bottom: 0;
+                }
             }
-            
-            .color-info-title {
-                margin-bottom: 0;
-                padding: spacing-vertical(small) spacing-vertical(small) 0 spacing-vertical(small);
-                font-weight: font-weight(bold);
-            }
-            
-            .color-description {
-                margin-bottom: 0;
-                padding: spacing-vertical(x-small) spacing-vertical(small);
-            }
-            
+
             .color-info-content {
                 padding: spacing-vertical(small);
                 background: $white;
@@ -373,12 +376,12 @@
             
             &.on-white {
                 background: $white;
-                color: palette(grayscale, black);
+                color: palette(grayscale, x-dark);
             }
             
             &.on-gray {
-                background: palette(grayscale, base);
-                color: palette(grayscale, black);
+                background: palette(grayscale, back);
+                color: palette(grayscale, x-dark);
             }
             
             &.on-dark-primary {
@@ -397,23 +400,23 @@
             }
             
             &.on-dark-success {
-                background: palette(success, x-dark);
-                color: palette(success, x-light);
+                background: palette(success, text);
+                color: palette(success, back);
             }
             
             &.on-dark-error {
-                background: palette(error, x-dark);
-                color: palette(error, x-light);
+                background: palette(error, text);
+                color: palette(error, back);
             }
             
             &.on-dark-warning {
-                background: palette(warning, x-dark);
-                color: palette(warning, x-light);
+                background: palette(warning, text);
+                color: palette(warning, back);
             }
             
             &.on-dark-information {
-                background: palette(information, x-dark);
-                color: palette(information, x-light);
+                background: palette(information, text);
+                color: palette(information, back);
             }
         }
     
@@ -508,6 +511,11 @@
                     color: palette(grayscale, x-light);
                 }
                 
+                &.back {
+                    background: palette(grayscale, back);
+                    color: palette(grayscale, x-light);
+                }
+                
                 &.trans {
                     background: palette(grayscale, trans);
                     color: palette(grayscale, x-dark);
@@ -515,128 +523,81 @@
             }
             
             &.success {
-                background: palette(success, base);
-                color: palette(success, x-dark);
+                background: palette(success, text);
+                color: $white;
                 
-                &.x-dark {
-                    background: palette(success, x-dark);
-                    color: palette(success, x-light);
+                &.text {
+                    background: palette(success, text);
+                    color: $white;
                 }
                 
-                &.dark {
-                    background: palette(success, dark);
-                    color: palette(success, x-light);
+                &.accent {
+                    background: palette(success, accent);
+                    color: $white;
                 }
                 
-                &.base {
-                    background: palette(success, base);
-                    color: palette(success, x-light);
-                }
-                
-                &.light {
-                    background: palette(success, light);
-                    color: palette(success, x-dark);
-                }
-                
-                &.x-light {
-                    background: palette(success, x-light);
-                    color: palette(success, x-dark);
+                &.back {
+                    background: palette(success, back);
+                    color: palette(success, text);
                 }
             }
             
             &.error {
-                background: palette(error, base);
-                color: palette(error, x-dark);
+                background: palette(error, text);
+                color: $white;
                 
-                &.x-dark {
-                    background: palette(error, x-dark);
-                    color: palette(error, x-light);
+                &.text {
+                    background: palette(error, text);
+                    color: $white;
                 }
                 
-                &.dark {
-                    background: palette(error, dark);
-                    color: palette(error, x-light);
+                &.accent {
+                    background: palette(error, accent);
+                    color: $white;
                 }
                 
-                &.base {
-                    background: palette(error, base);
-                    color: palette(error, x-light);
-                }
-                
-                &.light {
-                    background: palette(error, light);
-                    color: palette(error, x-dark);
-                }
-                
-                &.x-light {
-                    background: palette(error, x-light);
-                    color: palette(error, x-dark);
+                &.back {
+                    background: palette(error, back);
+                    color: palette(error, text);
                 }
             }
             
             &.warning {
-                background: palette(warning, base);
-                color: palette(warning, x-dark);
+                background: palette(warning, text);
+                color: $white;
                 
-                &.x-dark {
-                    background: palette(warning, x-dark);
-                    color: palette(warning, x-light);
+                &.text {
+                    background: palette(warning, text);
+                    color: $white;
                 }
                 
-                &.dark {
-                    background: palette(warning, dark);
-                    color: palette(warning, x-light);
+                &.accent {
+                    background: palette(warning, accent);
+                    color: $white;
                 }
                 
-                &.base {
-                    background: palette(warning, base);
-                    color: palette(warning, x-light);
-                }
-                
-                &.light {
-                    background: palette(warning, light);
-                    color: palette(warning, x-dark);
-                }
-                
-                &.x-light {
-                    background: palette(warning, x-light);
-                    color: palette(warning, x-dark);
-                }
-            }
-            
-            &.information {
-                background: palette(information, base);
-                color: palette(information, x-dark);
-                
-                &.x-dark {
-                    background: palette(information, x-dark);
-                    color: palette(information, x-light);
-                }
-                
-                &.dark {
-                    background: palette(information, dark);
-                    color: palette(information, x-light);
-                }
-                
-                &.base {
-                    background: palette(information, base);
-                    color: palette(information, x-light);
-                }
-                
-                &.light {
-                    background: palette(information, light);
-                    color: palette(information, x-dark);
-                }
-                
-                &.x-light {
-                    background: palette(information, x-light);
-                    color: palette(information, x-dark);
+                &.back {
+                    background: palette(warning, back);
+                    color: palette(warning, text);
                 }
             }
             
             &.fail-a11y-color {
-                border-left: rem($baseline/4) solid palette(warning, base);
-                box-shadow: inset 1px 0 0px $white;
+                
+                &:before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 24px 24px 0 0;
+                    border-color: palette(warning, accent) transparent transparent transparent;
+                }
+                /*border-left: rem($baseline/4) solid palette(warning, accent);
+                box-shadow: inset 1px 0 0px $white;*/
             }
             
             .color-meta {

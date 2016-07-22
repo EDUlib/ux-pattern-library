@@ -56,9 +56,6 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch primary base" title="Swatch: Primary Base">
                         <div class="color-info">
                             <span class="color-class">primary</span>
-                            <span class="color-reference">
-                                <span class="is-copyable">palette(primary, base)</span>
-                            </span>
                         </div>
                     </button>
                 </div>
@@ -66,9 +63,6 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch secondary base" title="Swatch: Secondary Base">
                         <div class="color-info">
                             <span class="color-class">secondary</span>
-                            <span class="color-reference">
-                                <span class="is-copyable">palette(secondary, base)</span>
-                            </span>
                         </div>
                     </button>
                 </div>
@@ -76,9 +70,6 @@ info: These are the predefined colors used throughout our patterns. Values here 
                     <button type="button" class="swatch grayscale base" title="Swatch: Gray Base">
                         <div class="color-info">
                             <span class="color-class">grayscale</span>
-                            <span class="color-reference">
-                                <span class="is-copyable">palette(grayscale, base)</span>
-                            </span>
                         </div>
                     </button>
                 </div>

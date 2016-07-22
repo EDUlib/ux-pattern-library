@@ -90,8 +90,8 @@ $palettes: (
         x-light:    lighten($brand-secondary, 48%)
     ),
     grayscale: (
-        x-dark:     darken($gray, 45%),
-        dark:       darken($gray, 35%),
+        x-dark:     darken($gray, 40%),
+        dark:       rgb(65, 64, 66), // charcoal
         base:       $gray,
         back:       lighten($gray, 40%),
         trans:      transparentize($gray, 0.75)

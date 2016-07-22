@@ -75,8 +75,8 @@
 }
 
 %a11y-ensure-contrast {
-    background: palette(grayscale, black) !important; // a11y: Ensuring that color contrast is high for legibility
-    color: palette(grayscale, base) !important; // a11y: Ensuring that color contrast is high for legibility
+    background: $black !important; // a11y: Ensuring that color contrast is high for legibility
+    color: $white !important; // a11y: Ensuring that color contrast is high for legibility
 }
 
 // ----------------------------

@@ -245,7 +245,7 @@
 .pldoc-tab-labels {
     @include clearfix();
     @extend %reset-lists;
-    border-bottom: $pldoc-tab-label-height solid palette(grayscale, base);
+    border-bottom: $pldoc-tab-label-height solid palette(grayscale, back);
 }
 
 .pldoc-tab-heading {
@@ -710,11 +710,12 @@
     .depth--3 {
 
         .hd {
-            color: palette(grayscale, base);
+            color: $white;
         }
 
-        .copy {
-            color: palette(grayscale, base);
+        .copy,
+        .copy-meta {
+            color: $white;
         }
     }
 

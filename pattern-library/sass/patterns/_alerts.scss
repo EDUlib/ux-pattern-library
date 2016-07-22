@@ -13,11 +13,11 @@
 // ----------------------------
 // #CONFIG
 // ----------------------------
-$alert-background-color: palette(grayscale, base) !default;
-$alert-icon-color: palette(grayscale, base) !default;
+$alert-background-color: $white !default;
+$alert-icon-color: $white !default;
 $alert-border-radius: spacing-vertical(xx-small) !default;
 // border around the sides and bottom
-$alert-border: rem(1) solid palette(grayscale, light) !default;
+$alert-border: rem(1) solid palette(grayscale, base) !default;
 
 // alert colors
 $alert-information-color: palette(information, text) !default;

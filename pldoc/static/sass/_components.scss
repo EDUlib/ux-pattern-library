@@ -304,7 +304,8 @@
             position: fixed;
             left: 37.5%;
             width: 640px;
-            height: 400px;
+            height: 420px;
+            border: rem(1) solid palette(grayscale, base);
             background: $white;
             box-shadow: 0 0 5px $shadow;
             z-index: z-index(mid-front);

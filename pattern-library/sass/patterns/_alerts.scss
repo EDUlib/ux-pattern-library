@@ -14,6 +14,7 @@
 // #CONFIG
 // ----------------------------
 $alert-background-color: $white !default;
+$alert-background-glow: palette(grayscale, back) !default;
 $alert-icon-color: $white !default;
 $alert-border-radius: spacing-vertical(xx-small) !default;
 // border around the sides and bottom
@@ -21,15 +22,20 @@ $alert-border: rem(1) solid palette(grayscale, base) !default;
 
 // alert colors
 $alert-information-color: palette(information, text) !default;
-$alert-warning-color: palette(warning, text) !default;
+$alert-warning-color: palette(warning, accent) !default;
 $alert-error-color: palette(error, text) !default;
 $alert-success-color: palette(success, text) !default;
+$alert-information-glow: palette(information, back) !default;
+$alert-warning-glow: palette(warning, back) !default;
+$alert-error-glow: palette(error, back) !default;
+$alert-success-glow: palette(success, back) !default;
 
 // ----------------------------
 // #UTILITIES
 // ----------------------------
-@mixin alert($alert-color) {
-    border-top:  rem(2) solid $alert-color;
+@mixin alert($alert-color, $alert-color-glow) {
+    border-top:  rem(4) solid $alert-color;
+    box-shadow: inset 0 0 0 rem(4) $alert-color-glow;
 
     .alert-icon {
         color: $alert-icon-color;
@@ -63,8 +69,8 @@ $alert-success-color: palette(success, text) !default;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     padding: spacing-vertical(small) spacing-horizontal(base);
+    box-shadow: inset 0 0 0 rem(4) $alert-background-glow;
     overflow: auto;
-    box-shadow: 0 rem(2) rem(2) 0 palette(grayscale, base);
 }
 
 .alert-icon {
@@ -131,20 +137,20 @@ $alert-success-color: palette(success, text) !default;
 
 // information-based alert
 .alert-information {
-    @include alert($alert-information-color);
+    @include alert($alert-information-color, $alert-information-glow);
 }
 
 // warning-based alert
 .alert-warning {
-    @include alert($alert-warning-color);
+    @include alert($alert-warning-color, $alert-warning-glow);
 }
 
 // error-based alert
 .alert-error {
-    @include alert($alert-error-color);
+    @include alert($alert-error-color, $alert-error-glow);
 }
 
 // success-based alert
 .alert-success {
-    @include alert($alert-success-color);
+    @include alert($alert-success-color, $alert-success-glow);
 }

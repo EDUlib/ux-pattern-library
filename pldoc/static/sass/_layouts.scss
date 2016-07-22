@@ -70,6 +70,7 @@
 .pldoc-wrapper-content-supplemental {
     background-color: palette(grayscale, back);
     padding: spacing-vertical(small);
+    @include padding-left(0);
 
     @include susy-breakpoint($bp-screen-md, $susy-default) {
         @include span(3 first);

@@ -13,7 +13,7 @@ slug:         colors
 
 description:  Predefined system and configurable colors with calculated ranges
 
-info: These are the predefined colors used throughout our patterns. Values here (noted by our Sass variable name, the RGB value and the HEX value) are used for backgrounds, text color, and decorative elements. Note - when using any values here, make sure that any text on a background passes WCAG AA guidelines for color contrast.
+info: These are the predefined colors used throughout our patterns. Each color is displayed on various background colors for easy combinations. Those colors which have a yellow flag are not accessible combinations and should be avoided. For example, our grayscale below does not provide enough contrast on a white background (nor white on the gray background). Click any color for more information and developer values.
 ---
 
 <div class="info-pane is-hidden" tabindex="-1">

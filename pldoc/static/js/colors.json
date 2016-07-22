@@ -4,7 +4,6 @@
         "title": "Primary X-Dark",
         "description": "The darkest shade of the primary color.",
         "recs": [{
-            "fore": ["light","x-light"],
             "back": ["light","x-light"]
         }]
     }],
@@ -12,7 +11,6 @@
         "title": "Primary Dark",
         "description": "A darker shade of the base primary color.",
         "recs": [{
-            "fore": ["light","x-light"],
             "back": ["light","x-light"]
         }]
     }],
@@ -21,7 +19,7 @@
         "description": "The base primary color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -29,7 +27,7 @@
         "description": "A lighter tint of the primary base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -37,7 +35,7 @@
         "description": "A very light, near white, tint of the primary base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }, {
@@ -47,7 +45,7 @@
         "description": "The darkest shade of the secondary color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -55,7 +53,7 @@
         "description": "A darker shade of the base secondary color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "base": [{
@@ -63,7 +61,7 @@
         "description": "The base secondary color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -71,7 +69,7 @@
         "description": "A lighter tint of the secondary base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -79,7 +77,7 @@
         "description": "A very light, near white, tint of the secondary base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }, {
@@ -89,7 +87,7 @@
         "description": "A very dark shade of the base gray.",
         "recs": [{
             "fore": ["white","light","x-light"],
-            "back": ["white","light","x-light"]
+            "back": ["black","dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -97,7 +95,7 @@
         "description": "A darker shade of the base gray.",
         "recs": [{
             "fore": ["white","x-light"],
-            "back": ["white","x-light"]
+            "back": ["black","x-dark"]
         }]
     }],
     "base": [{
@@ -105,14 +103,14 @@
         "description": "The base gray, near white and typically used for backgrounds.",
         "recs": [{
             "fore": ["black","dark","x-dark"],
-            "back": ["black","dark","x-dark"]
+            "back": ["white","light","x-light"]
         }]
     }],
     "trans": [{
         "title": "Transparent Gray",
         "description": "The base gray but at 65% opacity.",
         "recs": [{
-            "fore": ["black","dark","x-dark"],
+            "fore": ["Not recommended"],
             "back": ["black","dark","x-dark"]
         }]
     }]
@@ -123,7 +121,7 @@
         "description": "The darkest shade of the success color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -131,7 +129,7 @@
         "description": "A darker shade of the base success color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "base": [{
@@ -139,7 +137,7 @@
         "description": "The base success color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -147,7 +145,7 @@
         "description": "A lighter tint of the success base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -155,7 +153,7 @@
         "description": "A very light, near white, tint of the success base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }, {
@@ -165,7 +163,7 @@
         "description": "The darkest shade of the error color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -173,7 +171,7 @@
         "description": "A darker shade of the base error color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "base": [{
@@ -181,7 +179,7 @@
         "description": "The base error color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -189,7 +187,7 @@
         "description": "A lighter tint of the error base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -197,7 +195,7 @@
         "description": "A very light, near white, tint of the error base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }, {
@@ -207,7 +205,7 @@
         "description": "The darkest shade of the warning color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -215,7 +213,7 @@
         "description": "A darker shade of the base warning color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "base": [{
@@ -223,7 +221,7 @@
         "description": "The base warning color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -231,7 +229,7 @@
         "description": "A lighter tint of the warning base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -239,7 +237,7 @@
         "description": "A very light, near white, tint of the warning base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }, {
@@ -249,7 +247,7 @@
         "description": "The darkest shade of the information color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "dark": [{
@@ -257,7 +255,7 @@
         "description": "A darker shade of the base information color.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "base": [{
@@ -265,7 +263,7 @@
         "description": "The base information color intended for main use.",
         "recs": [{
             "fore": ["light","x-light"],
-            "back": ["light","x-light"]
+            "back": ["dark","x-dark"]
         }]
     }],
     "light": [{
@@ -273,7 +271,7 @@
         "description": "A lighter tint of the information base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }],
     "x-light": [{
@@ -281,7 +279,7 @@
         "description": "A very light, near white, tint of the information base color.",
         "recs": [{
             "fore": ["dark","x-dark"],
-            "back": ["dark","x-dark"]
+            "back": ["light","x-light"]
         }]
     }]
 }]

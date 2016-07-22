@@ -302,9 +302,9 @@
         
         .info-pane {
             position: fixed;
-            left: 43%;
-            width: 500px;
-            height: 350px;
+            left: 37.5%;
+            width: 640px;
+            height: 387px;
             background: palette(grayscale, base);
             box-shadow: 0 0 5px $shadow;
             z-index: z-index(mid-front);
@@ -317,13 +317,51 @@
             }
             
             .color-info-title {
-                padding: spacing-vertical(small);
+                margin-bottom: 0;
+                padding: spacing-vertical(small) spacing-vertical(small) 0 spacing-vertical(small);
                 font-weight: font-weight(bold);
+            }
+            
+            .color-description {
+                margin-bottom: 0;
+                padding: spacing-vertical(x-small) spacing-vertical(small);
             }
             
             .color-info-content {
                 padding: spacing-vertical(small);
                 background: $white;
+                
+                .color-usage {
+                    
+                    .list-background,
+                    .list-foreground {
+                        @include padding-right(5%);
+                        display: inline-block;
+                        width: 49%;
+                        vertical-align: top;
+                    }
+                }
+                
+                .color-technics {
+                    margin-top: spacing-vertical(small);
+                    
+                    dl {
+                        margin-bottom: 0;
+                        
+                        dt {
+                            display: inline-block;
+                            width: 19%;
+                            margin-top: 0;
+                            vertical-align: top;
+                        }
+                        
+                        dd {
+                            display: inline-block;
+                            width: 79%;
+                            vertical-align: top;
+                        }
+                    }
+                }
             }
         }
     }
@@ -598,6 +636,7 @@
             
             &.fail-a11y-color {
                 border-left: rem($baseline/4) solid palette(warning, base);
+                box-shadow: inset 1px 0 0px $white;
             }
             
             .color-meta {

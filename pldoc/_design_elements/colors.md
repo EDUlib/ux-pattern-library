@@ -21,17 +21,26 @@ info: These are the predefined colors used throughout our patterns. Values here 
         <span class="icon fa fa-close" aria-hidden="true"></span>
         <span>Close</span>
     </button>
-    <h3 class="hd-5 color-info-title"></h3>
+    <h2 class="hd-4 color-info-title"></h2>
+    <div class="color-description"></div>
     <div class="color-info-content">
-        <div class="color-description"></div>
         <div class="color-usage">
             <p>Optimum color combinations:</p>
-            <ul class="color-combinations"></ul>
+            <div class="list-background">
+                <h3 class="hd-6 emphasized" id="color-combination-background">Best on backgrounds that are</h3>
+                <ul class="color-combinations background" aria-describedby="color-combination-background"></ul>
+            </div>
         </div>
-        <div class="color-reference is-copyable"></div>
-        <div class="color-meta">
-            <span class="color-rgb is-copyable"></span>
-            <span class="color-hex is-copyable"></span>
+        <div class="color-technics">
+            <h3 class="hd-6 emphasized">Developers</h3>
+            <dl>
+                <dt>Sass:</dt>
+                <dd class="color-reference is-copyable"></dd>
+                <dt>RGB:</dt>
+                <dd class="color-rgb is-copyable"></dd>
+                <dt>HEX:</dt>
+                <dd class="color-hex is-copyable"></dd>
+            </dl>
         </div>
     </div>
 </div>
@@ -40,7 +49,7 @@ info: These are the predefined colors used throughout our patterns. Values here 
 <div class="example-set">
     <div class="example-container">
         <div class="grid-container grid-manual">
-            <div class="row">
+            <div class="row on-white">
                 <div class="col col-4">
                     <button type="button" class="swatch primary base" title="Swatch: Primary Base">
                         <div class="color-info">
@@ -121,89 +130,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-dark"></button>
+                    <button type="button" class="swatch primary x-dark" title="Primary X-dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary dark"></button>
+                    <button type="button" class="swatch primary dark" title="Primary Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary base"></button>
+                    <button type="button" class="swatch primary base" title="Primary Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary light"></button>
+                    <button type="button" class="swatch primary light" title="Primary Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-light"></button>
+                    <button type="button" class="swatch primary x-light" title="Primary X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-dark"></button>
+                    <button type="button" class="swatch primary x-dark" title="Primary X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary dark"></button>
+                    <button type="button" class="swatch primary dark" title="Primary Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary base"></button>
+                    <button type="button" class="swatch primary base" title="Primary Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary light"></button>
+                    <button type="button" class="swatch primary light" title="Primary Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-light"></button>
+                    <button type="button" class="swatch primary x-light" title="Primary X-Light gray"></button>
                 </div>
             </div>
             <div class="row on-dark-primary">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-dark"></button>
+                    <button type="button" class="swatch primary x-dark" title="Primary X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary dark"></button>
+                    <button type="button" class="swatch primary dark" title="Primary Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary base"></button>
+                    <button type="button" class="swatch primary base" title="Primary Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary light"></button>
+                    <button type="button" class="swatch primary light" title="Primary Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-light"></button>
+                    <button type="button" class="swatch primary x-light" title="Primary X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-dark"></button>
+                    <button type="button" class="swatch primary x-dark" title="Primary X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary dark"></button>
+                    <button type="button" class="swatch primary dark" title="Primary Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary base"></button>
+                    <button type="button" class="swatch primary base" title="Primary Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary light"></button>
+                    <button type="button" class="swatch primary light" title="Primary Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch primary x-light"></button>
+                    <button type="button" class="swatch primary x-light" title="Primary X-Light on dark gray"></button>
                 </div>
             </div>
         </div>
@@ -255,89 +264,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-dark"></button>
+                    <button type="button" class="swatch secondary x-dark" title="Secondary X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary dark"></button>
+                    <button type="button" class="swatch secondary dark" title="Secondary Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary base"></button>
+                    <button type="button" class="swatch secondary base" title="Secondary Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary light"></button>
+                    <button type="button" class="swatch secondary light" title="Secondary Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-light"></button>
+                    <button type="button" class="swatch secondary x-light" title="Secondary X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-dark"></button>
+                    <button type="button" class="swatch secondary x-dark" title="Secondary X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary dark"></button>
+                    <button type="button" class="swatch secondary dark" title="Secondary Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary base"></button>
+                    <button type="button" class="swatch secondary base" title="Secondary Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary light"></button>
+                    <button type="button" class="swatch secondary light" title="Secondary Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-light"></button>
+                    <button type="button" class="swatch secondary x-light" title="Secondary X-Light on gray"></button>
                 </div>
             </div>
             <div class="row on-dark-secondary">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-dark"></button>
+                    <button type="button" class="swatch secondary x-dark" title="Secondary X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary dark"></button>
+                    <button type="button" class="swatch secondary dark" title="Secondary Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary base"></button>
+                    <button type="button" class="swatch secondary base" title="Secondary Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary light"></button>
+                    <button type="button" class="swatch secondary light" title="Secondary Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-light"></button>
+                    <button type="button" class="swatch secondary x-light" title="Secondary X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-dark"></button>
+                    <button type="button" class="swatch secondary x-dark" title="Secondary X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary dark"></button>
+                    <button type="button" class="swatch secondary dark" title="Secondary Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary base"></button>
+                    <button type="button" class="swatch secondary base" title="Secondary Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary light"></button>
+                    <button type="button" class="swatch secondary light" title="Secondary Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch secondary x-light"></button>
+                    <button type="button" class="swatch secondary x-light" title="Secondary X-Light on dark gray"></button>
                 </div>
             </div>
         </div>
@@ -383,60 +392,60 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale x-dark"></button>
+                    <button type="button" class="swatch grayscale x-dark" title="Grayscale X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale dark"></button>
+                    <button type="button" class="swatch grayscale dark" title="Grayscale Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale base"></button>
+                    <button type="button" class="swatch grayscale base" title="Grayscale Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale trans"></button>
+                    <button type="button" class="swatch grayscale trans" title="Transparent gray on white"></button>
                 </div>
                 <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale x-dark"></button>
+                    <button type="button" class="swatch grayscale x-dark" title="Grayscale X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale dark"></button>
+                    <button type="button" class="swatch grayscale dark" title="Grayscale Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale base"></button>
+                    <button type="button" class="swatch grayscale base" title="Grayscale Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale trans"></button>
+                    <button type="button" class="swatch grayscale trans" title="Transparent gray on gray"></button>
                 </div>
                 <div class="col col-2 post-2"></div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale x-dark"></button>
+                    <button type="button" class="swatch grayscale x-dark" title="Grayscale X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale dark"></button>
+                    <button type="button" class="swatch grayscale dark" title="Grayscale Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale base"></button>
+                    <button type="button" class="swatch grayscale base" title="Grayscale Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch grayscale trans"></button>
+                    <button type="button" class="swatch grayscale trans" title="Transparent gray on its darkest shade"></button>
                 </div>
                 <div class="col col-2 post-2"></div>
             </div>
@@ -489,89 +498,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark"></button>
+                    <button type="button" class="swatch success x-dark" title="Success X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark"></button>
+                    <button type="button" class="swatch success dark" title="Success Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base"></button>
+                    <button type="button" class="swatch success base" title="Success Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success light"></button>
+                    <button type="button" class="swatch success light" title="Success Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-light"></button>
+                    <button type="button" class="swatch success x-light" title="Success X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark"></button>
+                    <button type="button" class="swatch success x-dark" title="Success X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark"></button>
+                    <button type="button" class="swatch success dark" title="Success Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base"></button>
+                    <button type="button" class="swatch success base" title="Success Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success light"></button>
+                    <button type="button" class="swatch success light" title="Success Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-light"></button>
+                    <button type="button" class="swatch success x-light" title="Success X-Light on gray"></button>
                 </div>
             </div>
             <div class="row on-dark-success">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark"></button>
+                    <button type="button" class="swatch success x-dark" title="Success X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark"></button>
+                    <button type="button" class="swatch success dark" title="Success Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base"></button>
+                    <button type="button" class="swatch success base" title="Success Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success light"></button>
+                    <button type="button" class="swatch success light" title="Success Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-light"></button>
+                    <button type="button" class="swatch success x-light" title="Success X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-dark"></button>
+                    <button type="button" class="swatch success x-dark" title="Success X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success dark"></button>
+                    <button type="button" class="swatch success dark" title="Success Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success base"></button>
+                    <button type="button" class="swatch success base" title="Success Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success light"></button>
+                    <button type="button" class="swatch success light" title="Success Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch success x-light"></button>
+                    <button type="button" class="swatch success x-light" title="Success X-Light on dark gray"></button>
                 </div>
             </div>
         </div>
@@ -623,89 +632,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark"></button>
+                    <button type="button" class="swatch error x-dark" title="Error X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark"></button>
+                    <button type="button" class="swatch error dark" title="Error Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base"></button>
+                    <button type="button" class="swatch error base" title="Error Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error light"></button>
+                    <button type="button" class="swatch error light" title="Error Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-light"></button>
+                    <button type="button" class="swatch error x-light" title="Error X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark"></button>
+                    <button type="button" class="swatch error x-dark" title="Error X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark"></button>
+                    <button type="button" class="swatch error dark" title="Error Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base"></button>
+                    <button type="button" class="swatch error base" title="Error Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error light"></button>
+                    <button type="button" class="swatch error light" title="Error Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-light"></button>
+                    <button type="button" class="swatch error x-light" title="Error X-Light on gray"></button>
                 </div>
             </div>
             <div class="row on-dark-error">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark"></button>
+                    <button type="button" class="swatch error x-dark" title="Error X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark"></button>
+                    <button type="button" class="swatch error dark" title="Error Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base"></button>
+                    <button type="button" class="swatch error base" title="Error Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error light"></button>
+                    <button type="button" class="swatch error light" title="Error Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-light"></button>
+                    <button type="button" class="swatch error x-light" title="Error X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-dark"></button>
+                    <button type="button" class="swatch error x-dark" title="Error X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error dark"></button>
+                    <button type="button" class="swatch error dark" title="Error Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error base"></button>
+                    <button type="button" class="swatch error base" title="Error Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error light"></button>
+                    <button type="button" class="swatch error light" title="Error Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch error x-light"></button>
+                    <button type="button" class="swatch error x-light" title="Error X-Light on dark gray"></button>
                 </div>
             </div>
         </div>
@@ -757,89 +766,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark"></button>
+                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark"></button>
+                    <button type="button" class="swatch warning dark" title="Warning Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning base"></button>
+                    <button type="button" class="swatch warning base" title="Warning Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning light"></button>
+                    <button type="button" class="swatch warning light" title="Warning Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-light"></button>
+                    <button type="button" class="swatch warning x-light" title="Warning X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark"></button>
+                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark"></button>
+                    <button type="button" class="swatch warning dark" title="Warning Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning base"></button>
+                    <button type="button" class="swatch warning base" title="Warning Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning light"></button>
+                    <button type="button" class="swatch warning light" title="Warning Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-light"></button>
+                    <button type="button" class="swatch warning x-light" title="Warning X-Light on gray"></button>
                 </div>
             </div>
             <div class="row on-dark-warning">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark"></button>
+                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark"></button>
+                    <button type="button" class="swatch warning dark" title="Warning Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning base"></button>
+                    <button type="button" class="swatch warning base" title="Warning Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning light"></button>
+                    <button type="button" class="swatch warning light" title="Warning Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-light"></button>
+                    <button type="button" class="swatch warning x-light" title="Warning X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-dark"></button>
+                    <button type="button" class="swatch warning x-dark" title="Warning X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning dark"></button>
+                    <button type="button" class="swatch warning dark" title="Warning Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning base"></button>
+                    <button type="button" class="swatch warning base" title="Warning Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning light"></button>
+                    <button type="button" class="swatch warning light" title="Warning Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch warning x-light"></button>
+                    <button type="button" class="swatch warning x-light" title="Warning X-Light on dark gray"></button>
                 </div>
             </div>
         </div>
@@ -891,89 +900,89 @@ info: These are the predefined colors used throughout our patterns. Values here 
             <div class="row on-white">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On white
+                        On white, with white
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-dark"></button>
+                    <button type="button" class="swatch information x-dark" title="Information X-Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information dark"></button>
+                    <button type="button" class="swatch information dark" title="Information Dark on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information base"></button>
+                    <button type="button" class="swatch information base" title="Information Base on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information light"></button>
+                    <button type="button" class="swatch information light" title="Information Light on white"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-light"></button>
+                    <button type="button" class="swatch information x-light" title="Information X-Light on white"></button>
                 </div>
             </div>
             <div class="row on-gray">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On gray
+                        On gray, with gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-dark"></button>
+                    <button type="button" class="swatch information x-dark" title="Information X-Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information dark"></button>
+                    <button type="button" class="swatch information dark" title="Information Dark on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information base"></button>
+                    <button type="button" class="swatch information base" title="Information Base on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information light"></button>
+                    <button type="button" class="swatch information light" title="Information Light on gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-light"></button>
+                    <button type="button" class="swatch information x-light" title="Information X-Light on gray"></button>
                 </div>
             </div>
             <div class="row on-dark-information">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark
+                        On dark, with dark
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-dark"></button>
+                    <button type="button" class="swatch information x-dark" title="Information X-Dark on itself"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information dark"></button>
+                    <button type="button" class="swatch information dark" title="Information Dark on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information base"></button>
+                    <button type="button" class="swatch information base" title="Information Base on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information light"></button>
+                    <button type="button" class="swatch information light" title="Information Light on its darkest shade"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-light"></button>
+                    <button type="button" class="swatch information x-light" title="Information X-Light on its darkest shade"></button>
                 </div>
             </div>
             <div class="row on-dark-grayscale">
                 <div class="col col-2">
                     <div class="swatch color-description copy">
-                        On dark gray
+                        On dark gray, with dark gray
                     </div>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-dark"></button>
+                    <button type="button" class="swatch information x-dark" title="Information X-Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information dark"></button>
+                    <button type="button" class="swatch information dark" title="Information Dark on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information base"></button>
+                    <button type="button" class="swatch information base" title="Information Base on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information light"></button>
+                    <button type="button" class="swatch information light" title="Information Light on dark gray"></button>
                 </div>
                 <div class="col col-2">
-                    <button type="button" class="swatch information x-light"></button>
+                    <button type="button" class="swatch information x-light" title="Information X-Light on dark gray"></button>
                 </div>
             </div>
         </div>

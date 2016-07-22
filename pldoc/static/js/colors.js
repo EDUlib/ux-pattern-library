@@ -1,10 +1,16 @@
-define(['jquery'], function($) {
+define([
+    'jquery',
+    './color-contrast.js'
+], function($) {
     'use strict';
 
     var $pane = $('#colors-preview .info-pane'),
         $title = $($pane).children('.color-info-title'),
         $desc = $($pane).find('.color-description'),
-        $use = $($pane).find('.color-combinations');
+        $back = $($pane).find('.color-combinations.background'),
+        $ref = $($pane).find('.color-reference');
+        // $rgb = $($pane).find('.color-rgb'),
+        // $hex = $($pane).find('.color-hex');
 
     var $button;
 
@@ -15,6 +21,7 @@ define(['jquery'], function($) {
         init: function() {
             ColorHandler.setupJSONColors();
             ColorHandler.listenForClick();
+            ColorHandler.listenForKeypress();
             ColorHandler.listenForClose();
         },
 
@@ -35,24 +42,37 @@ define(['jquery'], function($) {
                 $button = $(this);
                 classes = $($button).attr('class').split(/\s+/);
 
-                ColorHandler.showInformationWindow(classes);
+                ColorHandler.showInformationWindow(classes, $button);
+            });
+        },
+
+        listenForKeypress: function() {
+            var key;
+
+            $(document).on('keydown', function(e) {
+                key = e.which;
+
+                if (key === 27) {
+                    if (!$pane.hasClass('is-hidden')) {
+                        ColorHandler.clearValues();
+                        ColorHandler.hideInformationWindow();
+                    }
+                }
             });
         },
 
         listenForClose: function() {
-            var pane;
-
             $('#colors-preview .info-pane').on('click', '.close-button', function() {
-                pane = $(this).parent();
-
                 ColorHandler.clearValues();
-                ColorHandler.hideInformationWindow(pane);
+                ColorHandler.hideInformationWindow();
             });
         },
 
-        showInformationWindow: function(classes) {
+        showInformationWindow: function(classes, button) {
             var info = false,
-                fore, back;
+                back = [],
+                backHtml = '',
+                rgba;
 
             $(colors).each(function(i) {
                 if (colors[i].color === classes[1]) {
@@ -63,30 +83,38 @@ define(['jquery'], function($) {
             if (info) {
                 $title.text(info[0].title);
                 $desc.text(info[0].description);
+                $ref.text('palette(' + classes[1] + ', ' + classes[2] + ')');
 
-                $(info[0].recs[0].fore[0]).each(function(i) {
-                    fore.push(info[0].recs[0].fore[0][i]);
+                $(info[0].recs[0].back).each(function(i) {
+                    back.push(info[0].recs[0].back[i]);
                 });
-
-                $(info[0].recs[0].back[0]).each(function(i) {
-                    back.push(info[0].recs[0].back[0][i]);
-                });
-
-                $use.text('Best used with <strong>' + info[0].recs[0].fore[0] + '</strong> on <strong>' + info[0].recs[0].back[0] + '</strong>.');
 
                 $('#colors-preview .info-pane').removeClass('is-hidden').focus();
             }
+
+            if (back.length > 0) {
+                $(back).each(function(i) {
+                    backHtml += '<li>' + back[i] + '</li>';
+                });
+
+                $back.html(backHtml);
+            }
+            rgba = $(button).css('backgroundColor');
+            console.log(rgba);
+
+            // $hex.text(AccessibilityColorContrast.rgbaToHex($(button).css('backgroundColor')));
+            // $rgb.text($(button).css('backgroundColor'));
         },
 
-        hideInformationWindow: function(pane) {
-            $(pane).addClass('is-hidden');
+        hideInformationWindow: function() {
+            $pane.addClass('is-hidden');
             $button.focus();
         },
 
         clearValues: function() {
             $title.text('');
             $desc.text('');
-            $use.html('');
+            $back.html('');
         }
     };
 
